@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import OtpPage from "./Pages.js/AuthUser/OtpPage";
+
 import "./App.css";
 import LoginUser from "./Pages.js/LoginUser/LoginUser";
 import React, { Suspense, lazy } from "react";
@@ -10,8 +10,8 @@ const Navbar = lazy(() => import("./components/NavBar/Navbar"));
 const PageNotFound = lazy(() => import("./components/PageNotFound/PageNotFound"));
 const ProductAllItems = lazy(() => import("./Pages.js/ProductAllItems/ProductAllItems"));
 const ProductInfo = lazy(() => import("./Pages.js/ProductAllItems/ProductInfo"));
-const  ProductAddItem = lazy(() => import("./Pages.js/ProductAllItems/ProductAddItem"));
-
+const ProductAddItem = lazy(() => import("./Pages.js/ProductAllItems/ProductAddItem"));
+const OtpPage = lazy(() => import("./Pages.js/AuthUser/OtpPage"));
 
 const isAuthenticated = () => {
   return localStorage.getItem("token") !== null;
