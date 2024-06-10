@@ -1,0 +1,161 @@
+.nav-bar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #144757;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.filled-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color: #FAFAFE;
+}
+
+.text-count {
+  margin: 0; /* Remove default margin */
+  color: black; /* Text color */
+  font-size: 12px; /* Text size */
+}
+
+/* Styling for the start section of the navbar */
+.sub1 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for Sub2 to be at the center */
+.sub2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the text in the navbar */
+.nav-bar-fixed span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Remove default link styling */
+.nav-bar-fixed a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styling for the SVG icon */
+.nav-bar-fixed svg {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.inputSearch {
+  width: 200px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Rounded corners only on the left side */
+  border-right: none; /* Remove the right border */
+  outline: none;
+}
+
+.inputSearch::placeholder {
+  color: #aaa;
+}
+
+.search-button {
+  padding: 5px 8px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0; /* Rounded corners only on the right side */
+  border-left: none; /* Remove the left border */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.search-button:hover {
+  background-color: #bbb;
+}
+
+.search-button svg {
+  width: 16px;
+  height: 16px;
+  color: #333;
+ 
+}
+  
+  /* Responsive styling for tablets and mobile devices */
+  @media (max-width: 1024px) {
+    .nav-bar-fixed {
+      padding: 8px 16px;
+    }
+    
+    .nav-bar-fixed span {
+      font-size: 20px;
+    }
+    
+    .sub2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-bar-fixed {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 16px;
+    }
+    
+    .sub1 {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    
+    .nav-bar-fixed span {
+      font-size: 18px;
+    }
+    
+    .sub2 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-bar-fixed {
+      padding: 6px 12px;
+    }
+    
+    .nav-bar-fixed span {
+      font-size: 16px;
+    }
+    
+    .sub2 {
+      font-size: 16px;
+    }
+    
+    .nav-bar-fixed svg {
+      width: 20px;
+      height: 20px;
+    }
+  }

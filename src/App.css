@@ -1,0 +1,17 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+ 
+} */
+
+.MainPage {
+  background: #D8F8E4;
+  /* background: url('./assets/images/ImageBack.webp') center/cover no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh; /* This will make the MainPage cover the entire viewport height */
+}
